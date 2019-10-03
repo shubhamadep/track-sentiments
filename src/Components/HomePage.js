@@ -46,7 +46,7 @@ export default function HomePage() {
     // const props = useSpring({ number: 86.50, from: { number: 0 } }) <animated.span>{props.number}</animated.span>
     
     async function getSentimentScore(){
-      await axios.get('http://34.70.231.42/predict',{
+      await axios.get('https://34.70.231.42/predict',{
                     params: {text: value},
                     headers: {"Access-Control-Allow-Origin": "*"}
                     })
